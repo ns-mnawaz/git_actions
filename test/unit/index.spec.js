@@ -2,6 +2,8 @@ import { expect, assert } from 'chai';
 import word from '../../src/index';
 
 describe('Challenge unit tests ', () => {
+  console.log('GIT_SECRET');
+  console.log(process.env.GIT_SECRET);
   it('should say \'my\'', () => {
     const str = word.getMyWord(3);
     expect(str).to.equal('my');
