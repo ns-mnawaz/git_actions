@@ -22,7 +22,8 @@ jobs:
       - name: GitHub action with secret
         env: # environment variable
           GIT_SECRET: ${{ secrets.GIT_SECRET }}
-        run: echo $GIT_SECRET
+          TEMP: testing121212
+        run: echo $GIT_SECRET $TEMP
     
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
